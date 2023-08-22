@@ -5,7 +5,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+<<<<<<< HEAD
 import java.util.Map;
+=======
+>>>>>>> origin/master
 
 public class MyView {
 
@@ -19,6 +22,7 @@ public class MyView {
         RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);
         dispatcher.forward(request, response);
     }
+<<<<<<< HEAD
 
     public void render(Map<String, Object> model, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         modelToRequestAttribute(model , request);
@@ -29,4 +33,6 @@ public class MyView {
     private void modelToRequestAttribute(Map <String, Object> model, HttpServletRequest request) {
         model.forEach((key, value) -> request.setAttribute(key , value));
     }
+=======
+>>>>>>> origin/master
 }
